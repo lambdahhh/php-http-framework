@@ -9,3 +9,5 @@ pull:
 	docker-compose pull
 build-pull:
 	docker-compose build --pull
+test:
+	docker-compose run --rm php-cli composer test
