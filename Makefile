@@ -2,12 +2,12 @@ init: down-clear pull build-pull up
 down: down-clear
 
 up:
-	docker-compose up -d
+	docker compose up -d
 down-clear:
-	docker-compose down -v --remove-orphans
+	docker compose down -v --remove-orphans
 pull:
-	docker-compose pull
+	docker compose pull
 build-pull:
-	docker-compose build --pull
+	docker compose build --pull
 test:
-	docker-compose run --rm php-cli composer test
+	docker compose run --rm php-cli composer test
